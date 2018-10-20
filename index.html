@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/main.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1>Todo App</h1>
+    <!--
+      Types of form methods:
+        - GET -
+        - POST
+        - PUT
+        - DELETE
+   -->
+   <!--
+      URL Conventions "Decorated URL"
+      website.com/jasonvanderslice => website.com/users/jasonvanderslice
+    -->
+    <!-- 1. Structure -> Function -->
+    <!-- Form to add new todos -->
+    <section>
+      <h2>Add New Todo</h2>
+      <form action="#" method="post">
+        <input
+          data-js="todo-text"
+          name="fullName"
+          placeholder="e.g. Open Thomas Toys"
+          type="text"
+        >
+        <input
+          data-js="new-todo"
+          name="submit"
+          type="submit"
+          value="save todo"
+        >
+      </form>
+    </section>
+
+    <section>
+      <!-- List of todos -->
+      <h2>List of Todos</h2>
+      <ol data-js="todo-list">
+      </ol>
+    </section>
+  </body>
+</html>
