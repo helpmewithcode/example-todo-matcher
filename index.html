@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -44,6 +45,18 @@
       <h2>List of Todos</h2>
       <ol data-js="todo-list">
       </ol>
+    </section>
+
+    <section>
+      <ul data-js="matched-list">
+
+      </ul>
+      <button
+        data-js="todo-matcher-button"
+        name="generate-matches"
+        type="button">
+        match todos
+      </button>
     </section>
   </body>
 </html>
