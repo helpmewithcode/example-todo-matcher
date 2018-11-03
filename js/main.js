@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     todoListElement.insertAdjacentHTML('beforeend', nextTodoHTML);
 
-    // Find all tood items and listen for click in case I am done with them
+    // Find all todo items and listen for click in case I am done with them
     const elem = document
       .querySelectorAll('[data-js="todo-item"]')
       .forEach((todoItemElement) => {
@@ -49,4 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     ;
   });
+
+
+  // @TODO: Host has even number of participants in list and generates matches
+  // - [ ] List of participants (data not just HTML/UI) -> Local State
+  //   - [ ] Probably save to an array/list at the same step of adding to HTML (currently)
+  // - [ ] Add button to page "Match Participants"
+  //   - [ ] When clicking button: If the list of participants even?
+  //     - [ ] Then show who's matched with who in another list saying "{Participant Name} buys for {Matched Participant Name}"
 });
